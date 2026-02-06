@@ -18,13 +18,8 @@ body{
     font-weight: 500;
     background-color: hsl(30, 38%, 92%);
     height: 100vh;
-}
-.card{
-    background-color: white;
-    max-width: 375px;
-    margin: 50px auto;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 
@@ -61,12 +56,6 @@ p {
     color: var(--white);
 }
 
-/* Image */
-
-img {
-    width: 100%;
-}
-
 /* Button */
 .btn {
     all: unset;
@@ -94,21 +83,52 @@ img {
 }
 
 /* Card */
-.card {
-    border-radius: 10px;
-    overflow: hidden;
+.card{
+    background-color: white;
+    max-width: 375px;
+    margin: 0 1em;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-img {
+    background-image: url(./images/image-product-mobile.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom 20% center;
+    width: 100%;
+    height: 250px;
 }
 
 .card-info {
     padding: 1.75em 1.5em;
 }
 
-/* Price Container */
 .price-container {
     display: flex;
     align-items: center;
     gap: 1em;
     margin: 0.75em 0;
 }
+
+
+/* Desktop  Version */
+/*@media (min-width: 340px) {*/
+/*    .card {*/
+/*        flex-direction: row;*/
+/*    }*/
+/*    .card-img {*/
+/*        border: 1px solid teal;*/
+/*        background-image: url(./images/image-product-desktop.jpg);*/
+/*        height: 400px;*/
+/*        width: 500px;*/
+/*    }*/
+/*    .card-info {*/
+/*        height: 400px;*/
+/*        width: 500px;*/
+/*        border: 1px solid red;*/
+/*    }*/
+/*}*/
