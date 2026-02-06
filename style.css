@@ -14,7 +14,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: "Montserrat";
+    font-family: "Montserrat", sans-serif;
     font-weight: 500;
     background-color: hsl(30, 38%, 92%);
     height: 100vh;
@@ -31,7 +31,7 @@ body{
 /* Typography */
 h1 {
     color: var(--black);
-    font-family: "Fraunces";
+    font-family: "Fraunces", serif;
     line-height: 1;
     margin: .5em 0;
 }
@@ -48,7 +48,7 @@ p {
 
 .price {
     color: var(--green-500);
-    font-family: "Fraunces";
+    font-family: "Fraunces", serif;
     font-size: 2rem;
 }
 .strike {
