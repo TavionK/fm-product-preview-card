@@ -16,7 +16,7 @@
 body{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
-    background-color: hsl(30, 38%, 92%);
+    background-color: var(--cream);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -47,20 +47,16 @@ p {
     font-size: 2rem;
 }
 .strike {
-    text-decoration: line-through;
     font-size: 1rem;
     color: var(--grey);
-}
-
-.btn {
-    color: var(--white);
 }
 
 /* Button */
 .btn {
     all: unset;
+    color: var(--white);
+    font-family: "Montserrat", sans-serif;
     background-color: var(--green-500);
-    color: white;
     text-align: center;
     padding: .75em 1em;
     border-radius: 5px;
@@ -78,8 +74,18 @@ p {
     margin-right: .5em;
 }
 
-.btn:hover, .btn:focus {
+.btn:hover {
     background-color: var(--green-700);
+}
+
+.btn:focus-visible {  /* Only shows for keyboard, not mouse! */
+    background-color: var(--green-700);
+    outline: 2px solid var(--green-700);
+    outline-offset: 2px;
+}
+
+.btn:active {  /* Pressed state for everyone */
+    transform: scale(0.98);
 }
 
 /* Card */
@@ -90,6 +96,7 @@ p {
     flex-direction: column;
     border-radius: 10px;
     overflow: hidden;
+    max-width: 375px;
 }
 
 .card-img {
@@ -124,5 +131,8 @@ p {
     .card-img {
         aspect-ratio: auto;
         background-image: url(./images/image-product-desktop.jpg);
+    }
+    .card-info {
+        padding: 2em;
     }
 }
