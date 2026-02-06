@@ -78,7 +78,7 @@ p {
     margin-right: .5em;
 }
 
-.btn:hover {
+.btn:hover, .btn:focus {
     background-color: var(--green-700);
 }
 
@@ -112,22 +112,17 @@ p {
     margin: 0.75em 0;
 }
 
-
 /* Desktop  Version */
 @media (min-width: 640px) {
     .card {
         flex-direction: row;
-        align-items: stretch;
         max-width: 700px;
     }
-
     .card-img, .card-info {
         flex: 1
     }
     .card-img {
         aspect-ratio: auto;
         background-image: url(./images/image-product-desktop.jpg);
-    }
-    .card-info {
     }
 }
