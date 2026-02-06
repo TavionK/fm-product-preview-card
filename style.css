@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+    --green-500: hsl(158, 36%, 37%);
+    --green-700: hsl(158, 42%, 18%);
+    --black: hsl(212, 21%, 14%);
+    --grey: hsl(228, 12%, 48%);
+    --cream: hsl(30, 28%, 92%);
+    --white: hsl(0, 0%, 100%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Montserrat";
+    font-weight: 500;
+    background-color: hsl(30, 38%, 92%);
+    height: 100vh;
+}
+.card{
+    background-color: white;
+    max-width: 375px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Typography */
+h1 {
+    color: var(--black);
+    font-family: "Fraunces";
+    line-height: 1;
+    margin: .5em 0;
+}
+
+p {
+    color: var(--grey);
+    line-height: 1.5;
+}
+
+.type {
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.price {
+    color: var(--green-500);
+    font-family: "Fraunces";
+    font-size: 2rem;
+}
+.strike {
+    text-decoration: line-through;
+    font-size: 1rem;
+    color: var(--grey);
+}
+
+.btn {
+    color: var(--white);
+}
+
+/* Image */
+
+img {
+    width: 100%;
+}
+
+/* Button */
+.btn {
+    all: unset;
+    background-color: var(--green-500);
+    color: white;
+    text-align: center;
+    padding: .75em 1em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color .3s ease;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.cart-icon {
+    height: 1rem;
+    width: 1rem;
+    margin-right: .5em;
+}
+
+.btn:hover {
+    background-color: var(--green-700);
+}
+
+/* Card */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.card-info {
+    padding: 1.75em 1.5em;
+}
+
+/* Price Container */
+.price-container {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    margin: 0.75em 0;
+}
